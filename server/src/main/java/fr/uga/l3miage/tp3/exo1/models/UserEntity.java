@@ -9,6 +9,7 @@ import javax.persistence.OneToMany;
 import javax.validation.constraints.Email;
 import java.util.Set;
 
+
 @Entity
 @Setter
 @Getter
@@ -24,4 +25,6 @@ public class UserEntity {
     @OneToMany
     @JoinColumn(name = "name")
     private Set<PlaylistEntity> playlistEntities;
+
+
 }
